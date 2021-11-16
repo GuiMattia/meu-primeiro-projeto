@@ -1,0 +1,21 @@
+<div class="col-md-12">
+   
+</div>
+<div class="col-md-12" *ngFor="let categoria of categorias.conteudo">
+    <div class="col-md-3">  
+        <td>{{categoria.id}}</td> 
+    </div>
+    <div class="col-md-6"> 
+        <td>{{categoria.descricao}}</td>
+    </div>
+     <div class="3">
+        <button (click)="visualizar(categoria)">Visualizar</button>
+        <button (click)="atualizar(categoria)">Atualizar</button>
+     </div>
+</div>
+
+
+<button  (click)="cadastrarNovaCategoria()"
+     class="btn btn-success">Cadastrar Nova Categoria</button>
+    
+  
